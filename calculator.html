@@ -1,1 +1,41 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600); $number-color: #D7D8D8; $symbol-color: tomato; $font-color-dark: #333; $font-color-light: #fff; .wrapper { width: 375px; height: auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; margin-left: 20px; font-family: 'Open Sans', sans-serif; font-weight: 600; } header { background: black; color: $font-color-light; width: 375px; } h2 { padding-right: 15px; font-size: 3em; float: right; } ul.main { padding: 0; margin: 0; } .main { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; list-style: none; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; border: black 1px solid; } .flex-item { background: $number-color; color: $font-color-dark; padding: 5px; width: 70px; height: 70px; font-size: 2em; border: black 1px solid; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; } .flex-item-double { background: $number-color; color: $font-color-dark; padding: 5px; padding-right: 6px; width: 140px; border: black 1px solid; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 3; -webkit-flex-grow: 3; -ms-flex-positive: 3; flex-grow: 3; font-size: 2em; } .main li:nth-child(4n), .main li:nth-child(19) { background: $symbol-color; color: #fff; } .main li:nth-child(-n+3) { background: darken( $number-color, 15%) } footer { background: black; width: 375px; height: 25px; }
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>UI4 Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h2>523</h2>
+        </header>
+        <ul class=main>
+            <li class="flex-item">AC</li>
+            <li class="flex-item">&#43;&#47;&#45;</li>
+            <li class="flex-item">&#37;</li>
+            <li class="flex-item">&#247;</li>
+            <li class="flex-item">7</li>
+            <li class="flex-item">8</li>
+            <li class="flex-item">9</li>
+            <li class="flex-item">&#215;</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+            <li class="flex-item">&#8722;</li>
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">&#43;</li>
+            <li class="flex-item-double">0</li>
+            <li class="flex-item">&#8226;</li>
+            <li class="flex-item">&#61;</li>
+        </ul>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
